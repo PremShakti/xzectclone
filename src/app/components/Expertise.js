@@ -7,26 +7,32 @@ const data = [
   {
     src: "https://www.xzect.com/assets/images/icons/tech-stack/cpp.png",
     text: "C++",
+    id:1
   },
   {
     src: "https://www.xzect.com/assets/images/icons/tech-stack/python.png",
     text: "Python",
+    id:2
   },
   {
     src: "https://www.xzect.com/assets/images/icons/tech-stack/golang.png",
     text: "Golang",
+    id:3
   },
   {
     src: "https://www.xzect.com/assets/images/icons/tech-stack/rust.png",
     text: "Rust",
+    id:4
   },
   {
     src: "https://www.xzect.com/assets/images/icons/tech-stack/nodejs.png",
     text: "Nodejs",
+    id:5
   },
   {
     src: "https://www.xzect.com/assets/images/icons/tech-stack/react.png",
     text: "Reactjs",
+    id:6
   },
   {
     src: "https://www.xzect.com/assets/images/icons/tech-stack/angular.png",
@@ -132,8 +138,8 @@ const Expertise = () => {
       </p>
 
       <div className="teckStackContainer">
-        {data.map((e) => (
-          <Techcard {...e} />
+        {data.map((e,i) => (
+          <Techcard key={i} {...e} />
         ))}
       </div>
 

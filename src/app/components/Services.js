@@ -73,8 +73,8 @@ const Services = () => {
       </p>
 
       <div className="cardContainer">
-        {data.map((e) => (
-          <Card {...e} />
+        {data.map((e,i) => (
+          <Card key={i} {...e} />
         ))}
       </div>
     </section>

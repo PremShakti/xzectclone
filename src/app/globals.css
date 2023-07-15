@@ -206,6 +206,12 @@ body {
   padding: 1rem;
   border: 1px solid #666;
 }
+.inercard{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .card a {
   text-decoration: none;
@@ -217,12 +223,12 @@ body {
   margin-top: 20px;
 }
 
-.card img {
-  width: 100%;
+.card .img {
+ 
   border-radius: 5px;
   transition: transform 0.3s;
 }
-.card:hover img {
+.card:hover .img {
   transform: scale(1.1);
 }
 
